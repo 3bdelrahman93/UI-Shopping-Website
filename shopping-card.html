@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <div class="nav-wrapper clearfix">
+    <nav class="container">
+      <h1>Website Navigation</h1>
+      <ul class="site-navigation">
+        <li class="active"><a href="#!">SH</a></li>
+        <li><a href="#!">Women</a></li>
+        <li><a href="#!">Men</a></li>
+        <li><a href="#!">Kids</a></li>
+        <li><a href="#!">Coming Soon</a></li>
+        <li><a href="#!">About</a></li>
+      </ul>
+      <div class="user-actions">
+        <ul>
+          <li><a href="#!">Basket <i class="fa fa-shopping-bag"></i></a></li>
+          <li><a href="#!">Log In <i class="fa fa-user"></i></a></li>
+          <li><a href="#!"><i class="fa fa-search search-icon"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <hr>
+  <div class="order-wrapper">
+    <header class="container">
+      <h1>Your Shopping Bag</h1>
+    </header>
+    <p> Items reserved for limited time only</p>
+  </div>
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Product</th>
+          <th scope="col" colspan="1.5">Description</th>
+          <th scope="col">Color</th>
+          <th scope="col">Size</th>
+          <th scope="col">QTY</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a href="#!"><img src="images/coat1.jpg" alt="Sample" /></td>
+          <td>
+            <h2>Floral Plimsoll</h2>
+            <p class="ref">Ref. 2453.1345</p>
+          </td>
+          <td>One Color</td>
+          <td>39
+          </td>
+          <td>1
+            <button type="button" class="size-btn"><img src="images/add.png"></button>
+            <button type="button" class="size-btn"><img src="images/subtract.png"></button>
+          </td>
+          <td>&euro;99.95</td>
+          <td>
+            <button type="button" class="delete"><img src="images/delete.png"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#!"><img src="images/outerwear2.jpg" alt="Sample" /></td>
+          <td>
+            <h2>Coated 5 pocket trousers</h2>
+            <p class="ref">Ref. 2413.4623</p>
+          </td>
+          <td>One Color</td>
+          <td>M
+          </td>
+          <td>1
+            <button type="button" class="size-btn"><img src="images/add.png"></button>
+            <button type="button" class="size-btn"><img src="images/subtract.png"></button>
+          </td>
+          <td>&euro;169.00</td>
+          <td>
+            <button type="button" class="delete"><img src="images/delete.png"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#!"><img src="images/tshirt1.jpg" alt="Sample" /></td>
+          <td>
+            <h2>oversized studio blouse</h2>
+            <p class="ref">Ref. 1434.5313</p>
+          </td>
+          <td>Black</td>
+          <td>S
+          </td>
+          <td>2
+          <button type="button" class="size-btn"><img src="images/add.png"></button>
+            <button type="button" class="size-btn"><img src="images/subtract.png"></button>
+          </td>
+          <td>&euro;299.00</td>
+          <td>
+            <button type="button" class="delete"><img src="images/delete.png"></button>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Subtotal:</td>
+          <td class="total">&euro;567.95</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="order-wrapper">
+    <h2>Shipping Address</h2>
+    <p> All fields are required</p>
+      <form method="post" class="form">
+        <p>Select Delivery Method</p>
+        <br>
+        <select name="Delivery Method">
+          <option value="DHL">DHL international - &euro;15</option>
+          <option value="SEGATE">Seagate International Group - &euro;30</option>
+          <option value="ZIM">ZIM international - &euro;20</option>
+          <option value="ARAMEX">ARAMEX- &euro;25</option>
+          <option value="FEDEX">FedEx- &euro;10</option>
+
+        </select>
+        <br>
+        <div class="multiple">
+          <p>First name</p>
+          <p>Last name</p>
+          <input type="text">
+          <input type="text">
+        </div>
+        <br>
+        <p>Address(line1)</p>
+        <br>
+        <input type="text">
+        <br>
+        <p>Address(line2)</p>
+        <br>
+        <input type="text">
+        <div class="multiple">
+          <p>City</p>
+          <p>Postal Code</p>
+          <input type="text">
+          <input type="text">
+        </div>
+        <br>
+        <div class="multiple">
+          <p>Phone Number</p>
+          <p>E-mail</p>
+          <input type="text">
+          <input type="text">
+        </div>
+        <br>
+        <label><input type="checkbox" value="is_used" /> Use this address for Billing</label>
+        <br>
+    <h2>Payment Options</h2>
+    <h4> All fields are required</h4>
+        <table class="bill">
+          <tbody>
+            <tr>
+              <td>Subtotal:</td>
+              <td>&euro;567,95</td>
+            </tr>
+            <tr>
+              <td>Shipping:</td>
+              <td>&euro;15,00</td>
+            </tr>
+            <tr>
+              <td class="total">Total:</td>
+              <td class="total">&euro;582,95</td>
+            </tr>
+          </tbody>
+        </table>
+      <p>Select Payment Method</p>
+      <br>
+      <select name="Payment">
+        <option value="Credit">Credit Card</option>
+        <option value="Debit">Debit Card</option>
+        <option value="Cash">Cash</option>
+      </select>
+      <br>
+      <button class="btn" type="submit"> Order Now </button>
+    </form>
+  </div>
+  <footer class="footer">
+    <div class="footer-services">
+      <nav class="container">
+        <div class="nav-footer-wrapper">
+          <h2>collection</h2>
+          <ul>
+            <li><a href="#!">Women(1244)</a></li>
+            <li><a href="#!">Men(234)</a></li>
+            <li><a href="#!">Kids(2323)</a></li>
+            <li><a href="#!">Coming Soon</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-services">
+      <nav class="container">
+        <div class="nav-footer-wrapper">
+          <h2>site</h2>
+          <ul>
+            <li><a href="#!">Terms of Service</a></li>
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Copyright Policy</a></li>
+            <li><a href="#!">Press Kit</a></li>
+            <li><a href="#!">Support</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-services">
+      <nav class="container">
+        <div class="nav-footer-wrapper">
+          <h2>Shop</h2>
+          <ul>
+            <li><a href="#!">About us</a></li>
+            <li><a href="#!">Shipping Methods</a></li>
+            <li><a href="#!">Career</a></li>
+            <li><a href="#!">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-social">
+      <div class="nav-footer-wrapper">
+        <h2>Social</h2>
+        <p>Shoper is made with love in Warsaw. 2014 &copy; All Rights reserved. El Passion.
+        </p>
+      </div>
+      <div class="footer-icons">
+        <a href="#!"><i class="fa fa-twitter"></i></a>
+        <a href="#!"><i class="fa fa-facebook"></i></a>
+        <a href="#!"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

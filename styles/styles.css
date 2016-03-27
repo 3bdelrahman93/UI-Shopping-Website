@@ -466,3 +466,189 @@ p.item_  {
 .nav-footer-wrapper a:hover {
   font-weight: bold;
 }
+
+/*------------------ shopping cart page ---------------------*/
+
+.table {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 90%
+}
+
+.table th,
+.table tr,
+.table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1pt solid #C2C2C2;
+  border-left: 10px;
+  height: 1px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.table th,
+.table h2 {
+  text-transform: uppercase;
+}
+
+.table th {
+  font-weight: normal;
+  color: #A0A0A0;
+}
+
+.table h2 {
+  font-family: Sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.table td {
+  font-weight: bold;
+}
+
+.ref {
+  font-weight: normal;
+  font-size: 16px;
+  font-style: italic;
+  color: #A0A0A0;
+}
+
+.table img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.table tbody tr:last-child {
+  background: #E2E2E2;
+  border-style: none;
+}
+
+.total {
+  color: #FFA500;
+  font-style: normal;
+}
+
+.delete {
+  padding: 0;
+  border: none;
+  background: transparent;
+  margin-left: 20px;
+}
+
+.delete img {
+  width: 16px;
+  height: 16px;
+}
+
+.size-btn {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.size-btn img {
+  width: 12px;
+  height: 12px;
+}
+
+.delete:focus,
+.size-btn:focus {
+  outline: none;
+}
+
+.order-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  border-width: 1px;
+}
+
+.order-wrapper h1 {
+  text-transform: uppercase;
+  color: #0a1c0f;
+  font-weight: normal;
+  font-size: 45px;
+  margin: 0;
+}
+
+.order-wrapper h2,
+.order-wrapper h3 {
+  text-align: center;
+  color: #0a1c0f;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.order-wrapper h4 {
+  text-align: center;
+    margin-top: 0px;
+  color: #a0a0a0;
+  font-size: 25px;
+  font-style: italic;
+
+}
+
+.order-wrapper .form p,
+.order-wrapper .form select,
+.order-wrapper .form input {
+  display: inline-block;
+  width: 99%;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.order-wrapper p {
+  text-align: center;
+  color: #a0a0a0;
+  font-size: 25px;
+  font-style: italic;
+}
+.order-wrapper .form select,
+.order-wrapper .form input[type=text] {
+  height: 50px;
+}
+
+.order-wrapper .form .multiple p,
+.order-wrapper .form .multiple input[type=text] {
+  width: 49%;
+}
+
+.order-wrapper .form input[type=checkbox] {
+  text-align: left;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+.order-wrapper .form label {
+  color: #a0a0a0;
+  font-size: 18px;
+}
+
+.bill {
+  text-align: left;
+  margin: 0 auto;
+  width: 25%
+}
+
+.bill td,
+.bill tr {
+  padding: 10px;
+  font-weight: bold;
+  font-family: Sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form .btn {
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: white;
+}
